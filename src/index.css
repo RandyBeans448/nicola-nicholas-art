@@ -5,9 +5,281 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+ 
+  }
+  100% {
+      opacity: 1;
+
+  }
+}
+
+.btn{
+  text-transform: none;
+}
+
+.front-page-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-page-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.front-page-title {
+  font-size: 3vw;
+
+}
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2.5%;
+}
+
+.nav-bar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.nicola-nicholas {
+  font-weight: lighter;
+  margin: 1%;
+}
+
+.list-item {
+  margin: 0 1vw;
+  font-weight: lighter;
+
+}
+
+.list-text {
+  font-weight: lighter;
+}
+
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2vw 0vw 2.5vw 0vw;
+  padding: 0;
+}
+
+.gallery-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 0.75em;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+
+.gallery-button-active {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 0.75em;
+  font-weight: lighter;
+  letter-spacing: 0.1vw;
+  cursor: pointer;
+  color: rgb(206, 0, 0);
+}
+
+.gallery-button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
+.artwork-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.artwork-wrapper :nth-child(1) {
+  animation-delay: 10s;
+}
+
+.artwork-container {
+  overflow: none;
+  object-fit: cover;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+.artwork-container:hover {
+  transform: scale(1.03);
+}
+
+.artwork-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-picture {
+  height: 90vh;
+}
+
+.artwork-modal {
+  width: 100vh;
+  height: 80vh;
+  overflow: none;
+}
+
+.artwork {
+  width: 20vh;
+  height: 17.5vh;
+  object-fit: cover;
+  overflow: none;
+  margin-bottom: 1vh;
+}
+
+.header-list-item {
+  
+  font-weight: lighter;
+}
+
+.header-link {
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 6vw 0vw 6.5vw 0vw;
+    padding: 0;
+  }
+  
+  .gallery-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 2vw;
+    font-weight: lighter;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  
+  .gallery-button-active {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 0.75em;
+    font-weight: lighter;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    color: rgb(206, 0, 0);
+  }
+
+  .header-link {
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 6vw 0vw 6.5vw 0vw;
+    padding: 0;
+  }
+  
+  .gallery-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    font-weight: lighter;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  
+  .gallery-button-active {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 0.75em;
+    font-weight: lighter;
+    letter-spacing: 0.1vw;
+    cursor: pointer;
+    color: rgb(206, 0, 0);
+  }
+
+  .header-link {
+    text-decoration: none;
+    font-size: 0.75em;
+  }
+
+}
+
+
