@@ -5,7 +5,7 @@ import FrontPage from "./components/FrontPage";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
-import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Routes } from "react-router-dom";
 import MainPage from "./components/MainPage";
 
 function App() {
