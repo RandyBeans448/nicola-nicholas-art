@@ -1,5 +1,5 @@
 {
-  "homepage": "https://RandyBeans448.github.io/nicola-nicholas-art",
+  "homepage": ".",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -21,11 +21,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages master -d build"
   },
   "eslintConfig": {
     "extends": [
