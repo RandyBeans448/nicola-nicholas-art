@@ -14,7 +14,7 @@ function App() {
           <Routes>
           {/* <Route exact path='/' element={<MainPage/>}/> */}
           {/* <Route exact path='/about' element={<About/>}></Route> */}
-          <Route exact path='/gallery' element={<Gallery/>}></Route>
+          <Route exact path='/' element={<Gallery/>}></Route>
           {/* <Route exact path='/contact' element={<Contact/>}></Route> */}
       </Routes>
     </Router>
